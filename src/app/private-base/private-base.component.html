@@ -1,0 +1,57 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="background-color: #85bae6"
+>
+  <div class="container" style="background-color: #85bae6">
+    <a class="navbar-brand">ABC Student Management Platform</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/students/addstudent"
+            >Add New Student</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/students/showstudent"
+            >View All Students</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/students/editstudent"
+            >Edit Student</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/courses/addcourse"
+            >Add New Course</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/courses/showcourses"
+            >View All Courses</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/privatebase/courses/editcourse"
+            >Edit Course</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

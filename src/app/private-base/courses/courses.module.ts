@@ -6,6 +6,7 @@ import { CoursesComponent } from './courses.component';
 import { AddCourseComponent } from './add-course/add-course.component';
 import { ShowCoursesComponent } from './show-courses/show-courses.component';
 import { EditCourseComponent } from './edit-course/edit-course.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     CoursesRoutingModule
   ]
 })

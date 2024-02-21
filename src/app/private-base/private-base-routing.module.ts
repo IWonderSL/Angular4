@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { PrivateBaseComponent } from './private-base.component';
 import { StudentComponent } from './student/student.component';
 import { CoursesComponent } from './courses/courses.component';
-import { MyTestingComponent } from './my-testing/my-testing.component';
 import { AddStudentComponent } from './student/add-student/add-student.component';
 import { ShowStudentsComponent } from './student/show-students/show-students.component';
 import { EditStudentComponent } from './student/edit-student/edit-student.component';
@@ -18,8 +17,8 @@ const routes: Routes = [
     children: [
       {
         path: 'students',
-        component: StudentComponent
-        ,children: [
+        component: StudentComponent,
+        children: [
           {
             path: 'addstudent',
             component: AddStudentComponent,
@@ -36,8 +35,8 @@ const routes: Routes = [
       },
       {
         path: 'courses',
-        component: CoursesComponent
-        ,children: [
+        component: CoursesComponent,
+        children: [
           {
             path: 'addcourse',
             component: AddCourseComponent,
@@ -54,30 +53,17 @@ const routes: Routes = [
       },
       {
         path: 'testing',
-        component: MyTestingComponent,
-      }
+        loadChildren: () =>
+          import('./my-testing/my-testing.module').then(
+            (m) => m.MyTestingModule
+          ),
+      },
     ],
   },
-
-  // {
-  //   path: 'students',
-  //   loadChildren: () =>
-  //     import('./student/student.module').then((m) => m.StudentModule),
-  // },
-  // {
-  //   path: 'courses',
-  //   loadChildren: () =>
-  //     import('./courses/courses.module').then((m) => m.CoursesModule),
-  // },
-  // {
-  //   path: 'testing',
-  //   loadChildren: () =>
-  //     import('./my-testing/my-testing.module').then((m) => m.MyTestingModule),
-  // },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PrivateBaseRoutingModule { }
+export class PrivateBaseRoutingModule {}

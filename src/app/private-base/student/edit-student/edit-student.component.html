@@ -1,1 +1,53 @@
-<p>edit-student works!</p>
+<div id="container">
+  <h1 style="text-align: center">All Students</h1>
+
+  <table
+    class="table table-striped table-bordered"
+    style="border: 1px solid #000"
+  >
+    <thead class="table-primary">
+      <tr>
+        <th scope="col" style="text-align: center">Name</th>
+        <th scope="col" style="text-align: center">Age</th>
+        <th scope="col" style="text-align: center">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>
+          <span
+            class="bi bi-pencil-square"
+            (click)="editStudent(student)"
+          ></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Edit form -->
+  <form *ngIf="isEditing" (submit)="saveEditedStudent()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        [(ngModel)]="editingStudent.name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        name="age"
+        [(ngModel)]="editingStudent.age"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>

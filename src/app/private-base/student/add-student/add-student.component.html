@@ -1,1 +1,33 @@
-<p>add-student works!</p>
+<div id="container">
+    <h1>Add New Student</h1>
+  
+    <form (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="name">Student Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          [(ngModel)]="studentName"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="age">Student Age</label>
+        <input
+          type="text"
+          class="form-control"
+          name="age"
+          [(ngModel)]="studentAge"
+          placeholder="Age"
+        />
+      </div>
+      <br />
+      <div *ngIf="showAlert" class="alert alert-success">
+        Student added successfully!
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+  

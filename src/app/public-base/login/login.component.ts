@@ -13,7 +13,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   login(event: any) {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
     this.email = event.target.elements.email.value;
     this.password = event.target.elements.password.value;

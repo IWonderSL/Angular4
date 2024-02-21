@@ -18,14 +18,14 @@ export class EditStudentComponent {
 
   editStudent(student: Student) {
     this.isEditing = true;
-    this.editingStudent = { ...student }; // Clone the student object to avoid modifying the original
+    this.editingStudent = { ...student };
   }
 
   saveEditedStudent() {
     if (this.editingStudent) {
       this.studentService.updateStudent(this.editingStudent);
       this.isEditing = false;
-      this.students = this.studentService.getAllStudents(); // Update the students array with the updated student details
+      this.students = this.studentService.getAllStudents();
     }
   }
 

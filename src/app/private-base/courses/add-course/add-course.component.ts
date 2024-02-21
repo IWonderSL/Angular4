@@ -18,12 +18,12 @@ export class AddCourseComponent {
 
   submitForm() {
     const newCourse: Course = {
-      id: Math.random(), // Generate a random ID for the new student
+      id: Math.random(), // Generate a random ID for the new Course
       name: this.courseName,
-      price: parseInt(this.coursePrice, 10) // Parse age as integer
+      price: parseInt(this.coursePrice, 10)
     };
     
-    this.courseService.addStudent(newCourse);
+    this.courseService.addCourse(newCourse);
   
     this.showAlert = true;
     setTimeout(() => {

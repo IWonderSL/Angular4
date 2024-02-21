@@ -9,7 +9,7 @@ export class CourseServiceService {
 
   constructor() {}
 
-  addStudent(newCourse: Course): void {
+  addCourse(newCourse: Course): void {
     const courses: Course[] =
       JSON.parse(localStorage.getItem(this.STORAGE_KEY) as string) || [];
 
@@ -18,13 +18,12 @@ export class CourseServiceService {
   }
 
   getAllCourses(): Course[] {
-    // Retrieve the students from local storage
+    
     const coursesString = localStorage.getItem(this.STORAGE_KEY);
     if (!coursesString) {
       return [];
     }
 
-    // Parse the JSON string into an array of students
     return JSON.parse(coursesString);
   }
 

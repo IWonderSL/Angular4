@@ -18,9 +18,9 @@ export class AddStudentComponent {
 
   submitForm() {
     const newStudent: Student = {
-      id: Math.random(), // Generate a random ID for the new student
+      id: Math.random(), 
       name: this.studentName,
-      age: parseInt(this.studentAge, 10) // Parse age as integer
+      age: parseInt(this.studentAge, 10)
     };
     
     this.studentService.addStudent(newStudent);

@@ -17,16 +17,16 @@ export class EditCourseComponent {
     this.courses = this.courseService.getAllCourses();
   }
 
-  editCourse(student: Course) {
+  editCourse(course: Course) {
     this.isEditing = true;
-    this.editingCourse = { ...student }; // Clone the student object to avoid modifying the original
+    this.editingCourse = { ...course };
   }
 
   saveEditedCourse() {
     if (this.editingCourse) {
       this.courseService.updateCourse(this.editingCourse);
       this.isEditing = false;
-      this.courses = this.courseService.getAllCourses(); // Update the students array with the updated student details
+      this.courses = this.courseService.getAllCourses();
     }
   }
 

@@ -13,6 +13,9 @@ import { ParentOutputComponent } from './output/parent-output/parent-output.comp
 import { ViaServiceComponent } from './via-service/via-service.component';
 import { Observer1ViaServiceComponent } from './via-service/observer1-via-service/observer1-via-service.component';
 import { Observer2ViaServiceComponent } from './via-service/observer2-via-service/observer2-via-service.component';
+import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
+import { ChildTemplateComponent } from './template-ref-var/child-template/child-template.component';
+import { ParentTemplateComponent } from './template-ref-var/parent-template/parent-template.component';
 
 const routes: Routes = [
   {
@@ -73,6 +76,20 @@ const routes: Routes = [
             path: 'observer2',
             component: Observer2ViaServiceComponent,
           },
+        ],
+      },
+      {
+        path: 'template',
+        component: TemplateRefVarComponent,
+        children: [
+          {
+            path: 'child',
+            component: ChildTemplateComponent,
+          },
+          {
+            path: 'parent',
+            component: ParentTemplateComponent,
+          }
         ],
       },
     ],

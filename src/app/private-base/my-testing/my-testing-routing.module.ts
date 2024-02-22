@@ -16,6 +16,10 @@ import { Observer2ViaServiceComponent } from './via-service/observer2-via-servic
 import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
 import { ChildTemplateComponent } from './template-ref-var/child-template/child-template.component';
 import { ParentTemplateComponent } from './template-ref-var/parent-template/parent-template.component';
+import { Output2Component } from './output2/output2.component';
+import { Child1Output2Component } from './output2/child1-output2/child1-output2.component';
+import { Child2Output2Component } from './output2/child2-output2/child2-output2.component';
+import { ParentOutput2Component } from './output2/parent-output2/parent-output2.component';
 
 const routes: Routes = [
   {
@@ -90,6 +94,24 @@ const routes: Routes = [
             path: 'parent',
             component: ParentTemplateComponent,
           }
+        ],
+      },
+      {
+        path: 'output2',
+        component: Output2Component,
+        children: [
+          {
+            path: 'child1',
+            component: Child1Output2Component,
+          },
+          {
+            path: 'child2',
+            component: Child2Output2Component,
+          },
+          {
+            path: 'parent',
+            component: ParentOutput2Component,
+          },
         ],
       },
     ],

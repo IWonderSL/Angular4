@@ -1,0 +1,12 @@
+<div>
+  <app-child1-output2
+    (messageEvent1)="receiveMessage1($event)"
+  ></app-child1-output2>
+  <app-child2-output2
+    (messageEvent2)="receiveMessage2($event)"
+  ></app-child2-output2>
+  <br /><br /><br />
+  <p>parent-output2 works!</p>
+  <p>Message received from child1: {{ message1 }}</p>
+  <p>Message received from child2: {{ message2 }}</p>
+</div>

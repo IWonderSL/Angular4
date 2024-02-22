@@ -8,6 +8,7 @@ import { OutputModule } from './output/output.module';
 import { ViewChildModule } from './view-child/view-child.module';
 import { ViaServiceModule } from './via-service/via-service.module';
 import { TemplateRefVarModule } from './template-ref-var/template-ref-var.module';
+import { Output2Module } from './output2/output2.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { TemplateRefVarModule } from './template-ref-var/template-ref-var.module
     OutputModule,
     ViewChildModule,
     ViaServiceModule,
-    TemplateRefVarModule
+    TemplateRefVarModule,
+    Output2Module
   ]
 })
 export class MyTestingModule { }

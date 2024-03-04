@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Output2Component } from './output2.component';
-import { Child1Output2Component } from './child1-output2/child1-output2.component';
-import { Child2Output2Component } from './child2-output2/child2-output2.component';
-import { ParentOutput2Component } from './parent-output2/parent-output2.component';
+import { Output2Component } from './output2/output2.component';
+import { Child1Output2Component } from './components/child1-output2/child1-output2.component';
+import { Child2Output2Component } from './components/child2-output2/child2-output2.component';
+import { ParentOutput2Component } from './components/parent-output2/parent-output2.component';
 
 const routes: Routes = [
   {

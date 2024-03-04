@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TemplateRefVarRoutingModule } from './template-ref-var-routing.module';
-import { TemplateRefVarComponent } from './template-ref-var.component';
-import { ChildTemplateComponent } from './child-template/child-template.component';
-import { ParentTemplateComponent } from './parent-template/parent-template.component';
+import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
+import { ChildTemplateComponent } from './components/child-template/child-template.component';
+import { ParentTemplateComponent } from './components/parent-template/parent-template.component';
 
 
 @NgModule({

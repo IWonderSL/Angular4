@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { StudentRoutingModule } from './student-routing.module';
-import { StudentComponent } from './student.component';
-import { AddStudentComponent } from './add-student/add-student.component';
-import { ShowStudentsComponent } from './show-students/show-students.component';
-import { EditStudentComponent } from './edit-student/edit-student.component';
+import { StudentComponent } from './student/student.component';
+import { AddStudentComponent } from './components/add-student/add-student.component';
+import { ShowStudentsComponent } from './components/show-students/show-students.component';
+import { EditStudentComponent } from './components/edit-student/edit-student.component';
 import { FormsModule } from '@angular/forms';
 
 

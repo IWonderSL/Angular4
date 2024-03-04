@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ViaServiceService } from '../via-service.service';
+import { ViaServiceService } from '../../service/via-service.service';
 
 @Component({
   selector: 'app-observer1-via-service',

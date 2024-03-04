@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { StudentServiceService } from '../student-service.service';
-import { Student } from '../Student.Model';
+import { StudentServiceService } from '../../service/student-service.service';
+import { Student } from '../../models/student.model';
 
 @Component({
   selector: 'app-edit-student',

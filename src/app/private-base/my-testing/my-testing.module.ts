@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MyTestingRoutingModule } from './my-testing-routing.module';
-import { MyTestingComponent } from './my-testing.component';
+import { MyTestingComponent } from './my-testing/my-testing.component';
 import { InputModule } from './input/input.module';
 import { OutputModule } from './output/output.module';
 import { ViewChildModule } from './view-child/view-child.module';

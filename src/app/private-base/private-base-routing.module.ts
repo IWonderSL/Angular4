@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PrivateBaseComponent } from './private-base.component';
-import { StudentComponent } from './student/student.component';
-import { CoursesComponent } from './courses/courses.component';
-import { AddStudentComponent } from './student/add-student/add-student.component';
-import { ShowStudentsComponent } from './student/show-students/show-students.component';
-import { EditStudentComponent } from './student/edit-student/edit-student.component';
-import { AddCourseComponent } from './courses/add-course/add-course.component';
-import { ShowCoursesComponent } from './courses/show-courses/show-courses.component';
-import { EditCourseComponent } from './courses/edit-course/edit-course.component';
+import { PrivateBaseComponent } from './private-base/private-base.component';
+import { StudentComponent } from './student/student/student.component';
+import { CoursesComponent } from './courses/courses/courses.component';
+import { AddStudentComponent } from './student/components/add-student/add-student.component';
+import { ShowStudentsComponent } from './student/components/show-students/show-students.component';
+import { EditStudentComponent } from './student/components/edit-student/edit-student.component';
+import { AddCourseComponent } from './courses/components/add-course/add-course.component';
+import { ShowCoursesComponent } from './courses/components/show-courses/show-courses.component';
+import { EditCourseComponent } from './courses/components/edit-course/edit-course.component';
 
 const routes: Routes = [
   {
